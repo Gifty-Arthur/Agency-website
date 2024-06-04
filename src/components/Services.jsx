@@ -36,8 +36,8 @@ const Services = () => {
   ];
   return (
     <div className="md:px-14 px-4 py-16 max-w-screen-2xl mx-auto">
-      <div className="text-center my-8">
-        <h2 className="text-4xl text-neuralDgrey font-semibold mb-2">
+      <div className="text-center my-10">
+        <h2 className="text-4xl text-neuralDgrey font-semibold mb-2 mt-8">
           Our Clients
         </h2>
         <p className="text-neuralGrey">
@@ -63,15 +63,25 @@ const Services = () => {
       </div>
 
       {/* cards */}
-      <div>
+      <div className="mt-14 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 md:w-11/12 mx-auto gap-12">
         {services.map((service) => (
-          <div key={services.id}>
+          <div
+            key={services.id}
+            className="px-4 py-8 text-center md:w-[300px] mx-auto md:h-80 rounded-md shadow cursor-pointer
+          hover:-translate-y-5 hover:border-b-4 hover:border-indigo-700 transitin-all duration-300 flex items-center justify-center h-full"
+          >
             <div>
-              <div>
-                <img src={service.image} alt="" />
+              <div className="bg-[#E8F5E9] mb-4 h-14 mx-auto rounded-tl-3xl rounded-br-3xl">
+                <img
+                  className="w-[48px] h-[48px] ml-24"
+                  src={service.image}
+                  alt=""
+                />
               </div>
-              <h4>{service.title}</h4>
-              <p>{service.decroption}</p>
+              <h4 className="text-2xl font-bold text-neuralDGrey mb-2 px-2">
+                {service.title}
+              </h4>
+              <p className="text-sm text-neuralGrey">{service.decroption}</p>
             </div>
           </div>
         ))}
