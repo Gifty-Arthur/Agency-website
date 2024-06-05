@@ -29,7 +29,7 @@ const About = () => {
 
       {/* company state */}
       <div className="px-4 lg:px-14 max-w-screen-2xl mx-auto bg-neutralSilver py-16">
-        <div>
+        <div className="flex flex-col md:flex-row justify-between items-center gap-8">
           <div className="md:w-1/2">
             <h2 className="text-4xl text-neuralDgrey font-semibold mb-4 md:w-4/5">
               Helping a local <br />
@@ -41,43 +41,45 @@ const About = () => {
           </div>
 
           {/* state */}
-          <div>
-            <div className="space-y-8 mx-auto flex sm:flex-row flex-col sm:items-center justify-around mt-10">
-              <div className="flex items-center gap-4">
-                <img className="w-[48px]" src={human} alt="" />
+          <div className="md:w-1/2 mx-auto flex sm:flex-row flex-col sm:items-center justify-around gap-12">
+            <div className="space-y-8">
+              <div className="flex itemes-center gap-4">
+                <img className="w-[38px h-[38px]" src={card} alt="" />
                 <div>
-                  <h4 className="text-2xl text-neutralDGrey font-semibold">
-                    2,245,321
+                  <h4 className="text-2xl text-neutralDGrey font-semi-bold">
+                    56,897,9
                   </h4>
                   <p>Members</p>
                 </div>
               </div>
 
-              <div className="flex items-center gap-4">
-                <img className="w-[48px]" src={human} alt="" />
+              <div className="flex itemes-center gapp-4">
+                <img className="w-[38px h-[38px]" src={card} alt="" />
                 <div>
-                  <h4 className="text-2xl text-neutralDGrey font-semibold">
-                    2,245,321
+                  <h4 className="text-2xl text-neutralDGrey font-semi-bold">
+                    56,897,9
+                  </h4>
+                  <p>Members</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="space-y-8">
+              <div className="flex itemes-center gap-4">
+                <img className="w-[38px h-[38px]" src={human} alt="" />
+                <div>
+                  <h4 className="text-2xl text-neutralDGrey font-semi-bold">
+                    56,897,9
                   </h4>
                   <p>Members</p>
                 </div>
               </div>
 
-              <div className="flex items-center gap-4">
-                <img className="w-[48px]" src={card} alt="" />
+              <div className="flex itemes-center gapp-4">
+                <img className="w-[38px h-[38px]" src={human} alt="" />
                 <div>
-                  <h4 className="text-2xl text-neutralDGrey font-semibold">
-                    2,245,321
-                  </h4>
-                  <p>Members</p>
-                </div>
-              </div>
-
-              <div className="flex items-center gap-4">
-                <img className="w-[48px]" src={card} alt="" />
-                <div>
-                  <h4 className="text-2xl text-neutralDGrey font-semibold">
-                    2,245,321
+                  <h4 className="text-2xl text-neutralDGrey font-semi-bold">
+                    56,897,9
                   </h4>
                   <p>Members</p>
                 </div>
